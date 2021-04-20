@@ -1,0 +1,13 @@
+
+
+<input  [(ngModel)]="serverName"/>
+
+
+<button class="btn btn-primary" [disabled]="!allowNewserver" (click)="onCreateServer()">
+    add server
+</button>
+<p>
+    {{ serverCreationStatus}}
+</p> 
+<app-server></app-server>
+<app-server></app-server>
