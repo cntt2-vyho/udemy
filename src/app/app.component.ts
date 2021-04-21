@@ -8,7 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'booking';
-  
+  servers=[];
+
+  onAddServer() {
+    this.servers.push('Another Server');
+  }
+
+  onRemoveServer(id: number) {
+    const position = id ;
+    this.servers.splice(position, 1);
+  }
 
   
 }
